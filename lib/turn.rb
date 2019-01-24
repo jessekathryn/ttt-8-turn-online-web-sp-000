@@ -11,8 +11,10 @@ def turn(board)
   user_input = gets.strip
   input_to_index(user_input) = gets.strip
   if valid_move?(board, index)
+    board[index] = value
     move(board, index, value = "X") 
-  else !!valid_move?(board, index)
+  else 
+    false
     gets user_input
 end
 end
