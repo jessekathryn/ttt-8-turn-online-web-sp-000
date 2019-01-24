@@ -15,7 +15,7 @@ def turn(board)
     move(board, index, value = "X") 
   else 
     false
-    gets user_input
+  turn(board)
 end
 end
 
