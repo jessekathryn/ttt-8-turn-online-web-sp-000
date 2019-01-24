@@ -14,8 +14,8 @@ def turn(board)
     move(board, index, value = "X") 
   else 
   turn(board)
-  display_board
 end
+  display_board
 end
 
 def input_to_index(user_input)
